@@ -43,5 +43,4 @@ s.requires_arc = true
 s.public_header_files = "client/client.h"
 s.source_files = 'client/*.{h,m}'
 s.dependency 'bitpay-ios-sdk', '~> 2.0.1'
-s.dependency 'Nocilla'
 end
