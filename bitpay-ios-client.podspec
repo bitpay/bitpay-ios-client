@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "bitpay-ios-client"
-s.version          = "2.1.1"
+s.version          = "2.1.2"
 s.summary          = "Powerful, flexible, lightweight interface to the BitPay Bitcoin Payment Gateway API for iOS."
 s.description      = <<-DESC
 ## [Getting Started &raquo;](http://dev.bitpay.com/guides/ios.html)
@@ -14,6 +14,8 @@ API Documentation is available on the [BitPay site](https://bitpay.com/api).
 Before running the behavior tests, you will need a test.bitpay.com account and you will need to set the local constants.
 
 To run unit tests:
+> Login to [Test BitPay site](https://test.bitpay.com) and retrieve a valid pairing code. Enter this pairing code in "constants.h" in "clientTests" dir. As an example of how the constants.h should look,
+`NSString * const PAIRING_CODE = @"W8ji6Du"; //use a real pairing code here`
 > Open Xcode -> key commands are: Command + u
 
 ## Found a bug?
@@ -42,5 +44,5 @@ s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.public_header_files = "client/*.h"
 s.source_files = 'client/*.{h,m}'
-s.dependency 'bitpay-ios-sdk', '~> 2.0.1'
+s.dependency 'bitpay-ios-keyutils', '~> 2.0.2'
 end
