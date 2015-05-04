@@ -1,5 +1,5 @@
 target 'client' do
-  pod 'bitpay-ios-sdk'
+  pod 'bitpay-ios-keyutils'
 end
 
 target 'clientTests' do
