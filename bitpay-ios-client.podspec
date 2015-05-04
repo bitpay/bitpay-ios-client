@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "bitpay-ios-client"
-s.version          = "2.1.2"
+s.version          = "2.1.3"
 s.summary          = "Powerful, flexible, lightweight interface to the BitPay Bitcoin Payment Gateway API for iOS."
 s.description      = <<-DESC
 ## [Getting Started &raquo;](http://dev.bitpay.com/guides/ios.html)
