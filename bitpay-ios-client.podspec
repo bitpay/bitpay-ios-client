@@ -23,7 +23,7 @@ Let us know! Send a pull request or a patch. Questions? Ask! We're here to help.
 
 **BitPay Support:**
 
-* [GitHub Issues](https://github.com/kleetus/bitpay-ios-client/issues)
+* [GitHub Issues](https://github.com/bitpay/bitpay-ios-client/issues)
 * Open an issue if you are having issues with this library
 * [Support](https://support.bitpay.com)
 * BitPay merchant support documentation
@@ -36,10 +36,10 @@ Sometimes a download can become corrupted for various reasons.  However, you can
 * On OS X use the md5 program.  For example:
 * md5 filename
 DESC
-s.homepage         = "https://github.com/kleetus/bitpay-ios-client"
+s.homepage         = "https://github.com/bitpay/bitpay-ios-client"
 s.license      = 'MIT'
 s.author           = { "Chris Kleeschulte" => "chrisk@bitpay.com" }
-s.source           = { :git => "https://github.com/kleetus/bitpay-ios-client.git", :tag => "v#{s.version}" }
+s.source           = { :git => "https://github.com/bitpay/bitpay-ios-client.git", :tag => "v#{s.version}" }
 s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.public_header_files = "client/*.h"
