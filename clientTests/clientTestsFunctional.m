@@ -55,13 +55,15 @@
     NSString *token = [self.bp authorizeClient:PAIRING_CODE error: &error];
     NSLog(@"token is: %@", token);
     XCTAssertNil(error, "Error is supposed to be nil, but was not");
+    NSTimeInterval timeBefore = [[NSDate date] timeIntervalSince1970];
+    NSTimeInterval timeNow = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"%f", timeNow);
+    while((timeNow - timeBefore) < 5){
+        timeNow = [[NSDate date] timeIntervalSince1970];
+    }
 }
 
-- (void) testInitiatesPairingTest {
-    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(InitiatesPairingTest) userInfo:nil repeats:NO];
-}
-
-- (void) InitiatesPairingTest {
+- (void) testInitiatesPairing {
     
     NSError *error = nil;
     NSString *pairingCode = [self.bp requestClientAuthorizationWithFacade: POS error: &error];

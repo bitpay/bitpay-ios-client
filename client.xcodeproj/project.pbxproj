@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B93CA977F4D1EC6D117CEC5 /* libPods-client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63980E1FEC6E183F6BBA6036 /* libPods-client.a */; };
-		97519C831AE196EC00A44F1D /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97519C821AE196EC00A44F1D /* libcrypto.a */; };
 		975FC3871AE175F6002750D7 /* libclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 975FC37B1AE175F6002750D7 /* libclient.a */; };
 		97644B921AE576180022527C /* clientTestsFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = 97644B911AE576180022527C /* clientTestsFunctional.m */; };
-		97A217961AF17708009920DF /* client.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 97D463861AE176E800302554 /* client.h */; };
+		979C909D1AFA7B370087CB2C /* libPods-client-bitpay-ios-keyutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979C909C1AFA7B370087CB2C /* libPods-client-bitpay-ios-keyutils.a */; };
+		979C909F1AFA7B550087CB2C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979C909E1AFA7B550087CB2C /* libcrypto.a */; };
+		97A217961AF17708009920DF /* client.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 97D463861AE176E800302554 /* client.h */; };
 		97D463851AE1768300302554 /* clientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D463841AE1768300302554 /* clientTests.m */; };
 		97D4638A1AE176E800302554 /* client.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D463871AE176E800302554 /* client.m */; };
 		97D4638B1AE176E800302554 /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D463891AE176E800302554 /* constants.m */; };
-		97D4638D1AE1776800302554 /* libPods-client-bitpay-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D4638C1AE1776800302554 /* libPods-client-bitpay-ios-sdk.a */; };
 		E4016C6964FBE4A7F9447F6D /* libPods-clientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8845498DD002B4295A12320 /* libPods-clientTests.a */; };
 /* End PBXBuildFile section */
 
@@ -30,14 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		975FC3791AE175F6002750D7 /* CopyFiles */ = {
+		975FC3791AE175F6002750D7 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				97A217961AF17708009920DF /* client.h in CopyFiles */,
+				97A217961AF17708009920DF /* client.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -52,6 +52,9 @@
 		975FC38C1AE175F6002750D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97644B911AE576180022527C /* clientTestsFunctional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clientTestsFunctional.m; sourceTree = "<group>"; };
 		97644B941AE581760022527C /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		979C909A1AFA7AF00087CB2C /* libPods-client-bitpay-ios-keyutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-client-bitpay-ios-keyutils.a"; path = "Pods/../build/Debug-iphoneos/libPods-client-bitpay-ios-keyutils.a"; sourceTree = "<group>"; };
+		979C909C1AFA7B370087CB2C /* libPods-client-bitpay-ios-keyutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-client-bitpay-ios-keyutils.a"; path = "Pods/../build/Debug-iphoneos/libPods-client-bitpay-ios-keyutils.a"; sourceTree = "<group>"; };
+		979C909E1AFA7B550087CB2C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Pods/bitpay-ios-keyutils/libs/libcrypto.a"; sourceTree = "<group>"; };
 		97D463841AE1768300302554 /* clientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clientTests.m; sourceTree = "<group>"; };
 		97D463861AE176E800302554 /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
 		97D463871AE176E800302554 /* client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = client.m; sourceTree = "<group>"; };
@@ -70,9 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97519C831AE196EC00A44F1D /* libcrypto.a in Frameworks */,
-				97D4638D1AE1776800302554 /* libPods-client-bitpay-ios-sdk.a in Frameworks */,
-				1B93CA977F4D1EC6D117CEC5 /* libPods-client.a in Frameworks */,
+				979C909F1AFA7B550087CB2C /* libcrypto.a in Frameworks */,
+				979C909D1AFA7B370087CB2C /* libPods-client-bitpay-ios-keyutils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 		06108A40A9B920C53D7A8015 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				979C909E1AFA7B550087CB2C /* libcrypto.a */,
+				979C909C1AFA7B370087CB2C /* libPods-client-bitpay-ios-keyutils.a */,
+				979C909A1AFA7AF00087CB2C /* libPods-client-bitpay-ios-keyutils.a */,
 				97519C821AE196EC00A44F1D /* libcrypto.a */,
 				97D4638C1AE1776800302554 /* libPods-client-bitpay-ios-sdk.a */,
 				63980E1FEC6E183F6BBA6036 /* libPods-client.a */,
@@ -204,7 +209,7 @@
 				332F56D116CAA6E32DC7C52A /* Check Pods Manifest.lock */,
 				975FC3771AE175F6002750D7 /* Sources */,
 				975FC3781AE175F6002750D7 /* Frameworks */,
-				975FC3791AE175F6002750D7 /* CopyFiles */,
+				975FC3791AE175F6002750D7 /* Copy Files */,
 				968EE3E4A692B225A2234E40 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -457,6 +462,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"/Users/chrisk/source/ios-sdk/keyutils/libs",
 					"$(PROJECT_DIR)/Pods/bitpay-ios-sdk",
+					"$(PROJECT_DIR)/Pods/bitpay-ios-keyutils/libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +479,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"/Users/chrisk/source/ios-sdk/keyutils/libs",
 					"$(PROJECT_DIR)/Pods/bitpay-ios-sdk",
+					"$(PROJECT_DIR)/Pods/bitpay-ios-keyutils/libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
