@@ -3,7 +3,7 @@ import os
 import re
 from pair_steps import *
 ROOT_ADDRESS = os.environ['PAIRFILEPATH']
-CONSTANTS_FILE = '../constants.h'
+CONSTANTS_FILE = './clientTests/constants.h'
 
 def write_pairing_code_to_constants_h():
     code = read_file("%s/paircode.txt" % ROOT_ADDRESS)
