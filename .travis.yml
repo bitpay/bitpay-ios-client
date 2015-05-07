@@ -2,7 +2,7 @@ language: objective-c
 install:
   - "sudo pip install -r clientTests/helpers/requirements.txt"
 script:
-  - "cd clientTests/helpers; python set_pairing_code.py"
+  - "python clientTests/helpers/set_pairing_code.py"
 xcode_project: client.xcodeproj
 xcode_scheme: client 
 xcode_sdk: iphonesimulator
