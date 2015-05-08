@@ -1,5 +1,6 @@
 language: objective-c
 install:
+  - "sudo gem install phantomjs"
   - "sudo pip install -r clientTests/helpers/requirements.txt"
 script:
   - "python clientTests/helpers/set_pairing_code.py"
