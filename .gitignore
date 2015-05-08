@@ -5,4 +5,5 @@ build
 **/xcuserdata
 **/Pods
 **/Podfile.lock
-**/clientTests/constants.h
+**/*.pyc
+**/*.log
