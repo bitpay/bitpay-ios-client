@@ -1,7 +1,10 @@
 language: objective-c
 install:
-  - "sudo pip install -r clientTests/helpers/requirements.txt"
-  - "python clientTests/helpers/set_pairing_code.py"
+  - "brew install phantomjs"
+  - "rvm install 2.1"
+  - "cd ./clientTests/helpers/ruby-client; bundle install; cd ../../../"
+script:
+  - "ruby ./clientTests/helpers/set_pair_code.rb"
 xcode_project: client.xcodeproj
 xcode_scheme: client 
 xcode_sdk: iphonesimulator

@@ -1,0 +1,11 @@
+.DS_Store
+test.rb
+Gemfile.lock
+pkg
+.c9
+.ruby-version
+.ruby-gemset
+*.swo
+*.swp
+bitpaykey.pem
+constants.txt
